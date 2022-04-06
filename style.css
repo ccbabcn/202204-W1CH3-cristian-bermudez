@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+.main__quote {
+  color: var(--main-orange);
+  text-transform: uppercase;
+}
+
+.main__big-quote {
+  color: var(--main-grey);
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+:root {
+  --main-orange: #ed6436;
+  --main-grey: #181818;
+}
