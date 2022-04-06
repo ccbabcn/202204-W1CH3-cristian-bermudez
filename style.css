@@ -24,6 +24,7 @@ body {
 }
 .main__photo:hover {
   animation: shader 1s;
+  filter: brightness(0.6);
 }
 .main__photo-container {
   display: inline-flex;
@@ -43,9 +44,23 @@ body {
   display: flex;
 }
 
+p[class*="quote"] {
+  color: var(--may-white);
+  line-height: 0;
+}
+
+.main__photo-big-quote {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.main__photo-quote {
+  font-size: 2rem;
+}
+
 :root {
   --main-orange: #ed6436;
   --main-grey: #181818;
+  --may-white: #fff;
 }
 
 @keyframes shader {
