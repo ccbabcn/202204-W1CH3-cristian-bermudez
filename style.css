@@ -22,6 +22,9 @@ body {
   object-position: 50%;
   border-radius: 30px;
 }
+.main__photo:hover {
+  animation: shader 1s;
+}
 .main__photo-container {
   display: inline-flex;
   flex-direction: column;
@@ -43,4 +46,13 @@ body {
 :root {
   --main-orange: #ed6436;
   --main-grey: #181818;
+}
+
+@keyframes shader {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(0.6);
+  }
 }
