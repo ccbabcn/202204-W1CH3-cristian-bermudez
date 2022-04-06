@@ -39,6 +39,12 @@ body {
   color: var(--main-white);
   background: var(--main-orange);
 }
+.main__view-buttom:hover {
+  margin: -2px;
+  border: 2px solid var(--main-orange);
+  background-color: var(--main-white);
+  color: var(--main-orange);
+}
 .main__header {
   display: flex;
   align-items: center;
