@@ -5,16 +5,69 @@
 body {
   font-family: "Nunito", sans-serif;
 }
+
+.main-container {
+  width: 90%;
+  min-width: 370px;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
 .main__quote {
+  line-height: 0;
   color: var(--main-orange);
   text-transform: uppercase;
 }
 .main__big-quote {
+  line-height: 3.2rem;
   color: var(--main-grey);
   font-size: 3.7rem;
   font-weight: 800;
 }
+.main__view-buttom {
+  padding: 25px 30px;
+  border: none;
+  border-radius: 0 30px 30px 30px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--main-white);
+  background: var(--main-orange);
+}
+.main__view-buttom:hover {
+  margin: -2px;
+  border: 2px solid var(--main-orange);
+  background-color: var(--main-white);
+  color: var(--main-orange);
+}
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 150px;
+}
+.main__header-headings {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  flex-direction: column;
+}
 .main__photo {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__photo-img {
   display: flex;
   width: 300px;
   height: 370px;
@@ -22,7 +75,7 @@ body {
   object-position: 50%;
   border-radius: 30px;
 }
-.main__photo:hover {
+.main__photo-img:hover {
   animation: shader 1s;
   filter: brightness(0.6);
 }
@@ -45,7 +98,7 @@ body {
 }
 
 p[class*="quote"] {
-  color: var(--may-white);
+  color: var(--main-white);
   line-height: 0;
 }
 
@@ -60,7 +113,7 @@ p[class*="quote"] {
 :root {
   --main-orange: #ed6436;
   --main-grey: #181818;
-  --may-white: #fff;
+  --main-white: #fff;
 }
 
 @keyframes shader {
