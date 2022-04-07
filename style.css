@@ -106,7 +106,7 @@ body {
   filter: brightness(0.6);
 }
 
-p[class*="quote"] {
+h3[class*="quote"] {
   color: var(--main-white);
   line-height: 0;
 }
